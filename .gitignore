@@ -15,6 +15,7 @@ fabricloader.log
 options.txt
 patchouli_data.json
 rhino.local.properties
+# Maybe todo? Add custom servers file (this would need a community server)
 servers.dat
 usercache.json
 usernamecache.json
