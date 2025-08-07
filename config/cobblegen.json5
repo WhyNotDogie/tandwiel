@@ -1,0 +1,49 @@
+{
+	"formatVersion": "1.0",
+	"cobbleGen": [
+		{
+			"id": "minecraft:cobblestone",
+			"weight": 100.0,
+		}
+	],
+	"stoneGen": [
+		{
+			"id": "minecraft:stone",
+			"weight": 100.0,
+		},
+	],
+	"basaltGen": [
+		{
+			"id": "minecraft:basalt",
+			"weight": 100.0,
+		},
+	],
+	"customGen": {
+		"cobbleGen": {
+			"createmetallurgy:coke_block": [
+				{
+					"id": "minecraft:cobblestone",
+					"weight": 80.0,
+				},
+				{
+					"id": "tfmg:coal_coke_block",
+					"weight": 20.0
+				}
+			],
+		},
+		"stoneGen": {
+			"minecraft:magma_block": [
+				{
+					"id": "minecraft:cobbled_deepslate",
+					"weight": 100.0
+				}
+			],
+			"minecraft:bedrock": [
+				{
+					"id": "minecraft:andesite",
+					"weight": 100.0
+				}
+			]
+		},
+	},
+}

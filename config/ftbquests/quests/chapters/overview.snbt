@@ -1,0 +1,119 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "overview"
+	group: "3D107862C5ED1E2C"
+	icon: "minecraft:cherry_sapling"
+	id: "2C9D047DF6311581"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["65C6B4E734215411"]
+			icon: "minecraft:oak_log"
+			id: "6F93851CDCE1A2B4"
+			rewards: [{
+				id: "797B063930E00CBE"
+				item: "create:builders_tea"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2CCA014F5418AC8D"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "minecraft:logs"
+					}
+				}
+				title: "punch a tree until either your fist or the tree breaks"
+				type: "item"
+			}]
+			title: "ow that hurts my fists"
+			x: -2.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["6F93851CDCE1A2B4"]
+			id: "12D6903C25CE7F26"
+			rewards: [
+				{
+					count: 2
+					id: "12987ADFD5CE31E4"
+					item: "createmetallurgy:green_light_bulb"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "314AD575D1F26CAC"
+					item: "createmetallurgy:red_light_bulb"
+					type: "item"
+				}
+			]
+			subtitle: "These will be useful"
+			tasks: [
+				{
+					id: "1DAEAF344EA0D7D9"
+					item: "createmetallurgy:foundry_basin"
+					type: "item"
+				}
+				{
+					id: "71D541B5EB58F2EC"
+					item: "createmetallurgy:foundry_lid"
+					type: "item"
+				}
+				{
+					id: "5ED293C29E0615C4"
+					item: "create:mechanical_mixer"
+					type: "item"
+				}
+				{
+					id: "335599D4D8C6C78E"
+					item: "create:encased_fan"
+					type: "item"
+				}
+				{
+					id: "2881320EC2DAFF57"
+					item: "create:mechanical_press"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "45165ED695D04E68"
+					item: { Count: 2, id: "create:basin" }
+					type: "item"
+				}
+				{
+					id: "67484BC4EE9A9EA2"
+					item: "create:deployer"
+					type: "item"
+				}
+				{
+					id: "4EF9A6DBDD67D851"
+					item: "create:millstone"
+					type: "item"
+				}
+				{
+					id: "7CA00A4785426D62"
+					item: "createmetallurgy:faucet"
+					type: "item"
+				}
+				{
+					id: "5777A118615C4345"
+					item: "createmetallurgy:casting_table"
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "345F22BD55F792DE"
+					item: { Count: 3, id: "createmetallurgy:graphite_blank_mold" }
+					type: "item"
+				}
+			]
+			title: "Preparations"
+			x: -1.0d
+			y: -0.5d
+		}
+	]
+	title: "Overview"
+}

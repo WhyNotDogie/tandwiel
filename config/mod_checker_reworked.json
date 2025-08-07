@@ -1,0 +1,27 @@
+[
+  {
+    "modId": "ftbxmodcompat",
+    "directDownloadLink": "https://www.curseforge.com/api/v1/mods/889915/files/6402486/download",
+    "websiteDownloadLink": "https://www.curseforge.com/minecraft/mc-mods/ftb-xmod-compat"
+  },
+  {
+    "modId": "ftbquests",
+    "directDownloadLink": "https://www.curseforge.com/api/v1/mods/289412/files/5543955/download",
+    "websiteDownloadLink": "https://www.curseforge.com/minecraft/mc-mods/ftb-quests-forge"
+  },
+  {
+    "modId": "ftblibrary",
+    "directDownloadLink": "https://www.curseforge.com/api/v1/mods/404465/files/5567591/download",
+    "websiteDownloadLink": "https://www.curseforge.com/minecraft/mc-mods/ftb-library"
+  },
+  {
+    "modId": "ftbteams",
+    "directDownloadLink": "https://www.curseforge.com/api/v1/mods/404468/files/5267190/download",
+    "websiteDownloadLink": "https://www.curseforge.com/minecraft/mc-mods/ftb-teams"
+  },
+  {
+    "modId": "itemfilters",
+    "directDownloadLink": "https://www.curseforge.com/api/v1/mods/309674/files/4838266/download",
+    "websiteDownloadLink": "https://www.curseforge.com/minecraft/mc-mods/item-filters"
+  }
+]

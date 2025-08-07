@@ -1,0 +1,198 @@
+{
+	autofocus_id: "0EA57B5A71CBF05C"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "toolsmith"
+	group: "2D9CA18924B0679E"
+	icon: {
+		Count: 1
+		id: "tfmg:screwdriver"
+		tag: {
+			Damage: 0
+		}
+	}
+	id: "200171DD1B3E9CFE"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["65C6B4E734215411"]
+			description: ["Here you can turn essential tools for automation unbreakable."]
+			icon: "minecraft:smithing_table"
+			id: "0EA57B5A71CBF05C"
+			rewards: [{
+				count: 5
+				id: "261C156E45C8AF83"
+				item: "create_currency_shops:iron_coin"
+				type: "item"
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "get your tool smithed!!"
+			tasks: [{
+				id: "058CD070EEC0C674"
+				title: "yeah i probably won't rob the place"
+				type: "checkmark"
+			}]
+			title: "Toolsmith"
+			x: -0.5d
+			y: 1.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["0EA57B5A71CBF05C"]
+			icon: {
+				Count: 1
+				id: "minecraft:wooden_axe"
+				tag: {
+					Damage: 0
+					Enchantments: [{ }]
+				}
+			}
+			id: "39CC1A128F6C8749"
+			rewards: [{
+				id: "48386D2F8662BD70"
+				item: {
+					Count: 1
+					id: "minecraft:wooden_axe"
+					tag: {
+						Damage: 0
+						Enchantments: [{ }]
+						Unbreakable: 1
+						display: {
+							Name: "{\"text\":\"Enchanted Axe\",\"color\":\"light_purple\",\"italic\":false}"
+						}
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					consume_items: true
+					id: "424E6A2CB8E39D0F"
+					item: {
+						Count: 1
+						id: "minecraft:wooden_axe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					consume_items: true
+					id: "5942CF482E02061F"
+					item: "create_currency_shops:gold_coin"
+					type: "item"
+				}
+			]
+			title: "Axe Everything!"
+			x: -2.5d
+			y: -0.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["0EA57B5A71CBF05C"]
+			icon: {
+				Count: 1
+				id: "kubejs:mini_wrench"
+				tag: {
+					Damage: 0
+					Enchantments: [{ }]
+				}
+			}
+			id: "608E91E01817B449"
+			rewards: [{
+				id: "59806113DECFE4D6"
+				item: {
+					Count: 1
+					id: "kubejs:mini_wrench"
+					tag: {
+						Damage: 0
+						Enchantments: [{ }]
+						display: {
+							Name: "{\"text\":\"Enchanted Mini Wrench\",\"color\":\"light_purple\",\"italic\":false}"
+						}
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					consume_items: true
+					id: "568DAAA7B5D81B99"
+					item: {
+						Count: 1
+						id: "kubejs:mini_wrench"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					consume_items: true
+					id: "7F035FCA76A1C886"
+					item: "create_currency_shops:gold_coin"
+					type: "item"
+				}
+			]
+			title: "Wrench Everything!"
+			x: -1.5d
+			y: -0.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["0EA57B5A71CBF05C"]
+			icon: {
+				Count: 1
+				id: "tfmg:screwdriver"
+				tag: {
+					Damage: 0
+					Enchantments: [{ }]
+				}
+			}
+			id: "56831E87CA268B76"
+			rewards: [{
+				id: "20BAC1410BF35D90"
+				item: {
+					Count: 1
+					id: "tfmg:screwdriver"
+					tag: {
+						Damage: 0
+						Enchantments: [{ }]
+						display: {
+							Name: "{\"text\":\"Enchanted Screwdriver\",\"color\":\"light_purple\",\"italic\":false}"
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "pun intended"
+			tasks: [
+				{
+					consume_items: true
+					id: "5039182C2ACE48D7"
+					item: {
+						Count: 1
+						id: "tfmg:screwdriver"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					consume_items: true
+					id: "774FF571BCEDB38B"
+					item: "create_currency_shops:gold_coin"
+					type: "item"
+				}
+			]
+			title: "Screw everything!"
+			x: -0.5d
+			y: -0.5d
+		}
+	]
+	title: "Toolsmith"
+}

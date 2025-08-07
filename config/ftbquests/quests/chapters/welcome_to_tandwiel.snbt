@@ -1,0 +1,68 @@
+{
+	autofocus_id: "2D3FDAF90BBDAC7D"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "welcome_to_tandwiel"
+	group: ""
+	icon: "tfmg:steel_cogwheel"
+	id: "65C6B4E734215411"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Tandwiel is a challenging modpack focused around progressing through different tiers of technology."
+				""
+				"This pack will force you to automate, innovate, and use your brain in order to progress."
+				""
+				"Pack made by whynotdogie"
+				"Inspired by CABIN/CAB by Pansmith and the Creators of Create respectively"
+				"{@pagebreak}"
+			]
+			icon: "tfmg:steel_cogwheel"
+			id: "2D3FDAF90BBDAC7D"
+			rewards: [{
+				id: "43FF7433327666E5"
+				item: "minecraft:water_bucket"
+				title: "Life Saver"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 2.0d
+			subtitle: "A heartfelt intro"
+			tasks: [{
+				id: "04988B0AF3225164"
+				title: "I aint readin allat"
+				type: "checkmark"
+			}]
+			title: "Tandwiel"
+			x: -4.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["2D3FDAF90BBDAC7D"]
+			icon: "wiltedrose:wilted_rose"
+			id: "195DD09667A50084"
+			rewards: [{
+				id: "2F35B0DF97E22E40"
+				item: {
+					Count: 1
+					id: "minecraft:wooden_axe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "ts modpack pmo"
+			tasks: [{
+				id: "691E390DC88B7E3B"
+				title: "I want to suffer"
+				type: "checkmark"
+			}]
+			x: -2.0d
+			y: 1.0d
+		}
+	]
+	title: "Welcome to Tandwiel"
+}
