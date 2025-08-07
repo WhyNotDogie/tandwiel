@@ -8,6 +8,9 @@
 
 > NOTE: Dev tooling is still being worked on. If anything goes wrong, please submit an issue on github.
 
+### Setting up the modpack
+to be honest i have no idea how ur gonna set this up from source good luck to you i guess
+
 ### How to install the mods
 Make sure python is installed, then run packdev/install.py
 
