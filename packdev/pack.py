@@ -5,6 +5,8 @@ import os
 import sys
 import stat
 import json
+import time
+import math
 
 dev = False
 delete = True
@@ -82,7 +84,15 @@ devadd = ""
 if dev:
     devadd = "-dev"
     
-dest = devdir + "builds/" + name + "-" + versionId + devadd + ".mrpack"
+dest = devdir + "builds/" + name + "-" + versionId + devadd
+
+if os.path.exists(dest + ".mrpack"):
+    # Add the current unix time to the file name to prevent name conflicts but still save correctly
+    t = str(math.floor(time.time()))
+    print("Destination file [" + dest + ".mrpack] already exists. Packaging file in " + dest + "-" + t + ".mrpack")
+    dest = dest + "-" + t
+
+dest = dest + ".mrpack"
 
 os.rename(devdir + "temp/builtzip.zip", dest)
 print("Packed modpack to: " + dest)
