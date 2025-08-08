@@ -7,12 +7,17 @@ import stat
 import json
 
 dev = False
+delete = True
 
 if "--dev" in sys.argv:
     print("Running packing utility in developer mode.")
     dev = True
 else:
     print("Running packing utility in production mode.")
+    
+if "--dontdelete" in sys.argv:
+    print("Do not delete mode enabled. Temporary files will not be deleted.")
+    delete = False
 
 def rmwriteableretry(func, path, exc_info):
     os.chmod(path, stat.S_IWRITE)
@@ -62,6 +67,8 @@ zippath = devdir + "builds/" + filename
 
 if os.path.exists(devdir + "temp/builtzip.zip"):
     os.remove(devdir + "temp/builtzip.zip")
+
+print("Packing...")
 shutil.make_archive(devdir + "temp/builtzip", "zip", builddir)
 
 with open("modrinth.index.json", "r", encoding="utf-8") as f:
@@ -74,5 +81,15 @@ devadd = ""
 
 if dev:
     devadd = "-dev"
+    
+dest = devdir + "builds/" + name + "-" + versionId + devadd + ".mrpack"
 
-os.rename(devdir + "temp/builtzip.zip", devdir + "builds/" + name + "-" + versionId + devadd)
+os.rename(devdir + "temp/builtzip.zip", dest)
+print("Packed modpack to: " + dest)
+
+if delete:
+    print("Deleting temporary files...")
+    if os.path.exists("packdev/.packdev/temp/"):
+        shutil.rmtree("packdev/.packdev/temp/", onerror=rmwriteableretry)
+    else:
+        print("Unable to delete temporary files: Temporary files do not exist. This is concerning.")
