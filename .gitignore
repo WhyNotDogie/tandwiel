@@ -23,3 +23,4 @@
 /config/fabric/indigo-renderer.properties
 /config/oculus.properties
 /kubejs/config/probe-settings.json
+/.vscode/probe.code-snippets
