@@ -9,10 +9,14 @@
 > NOTE: Dev tooling is still being worked on. If anything goes wrong, please submit an issue on github.
 
 ### Setting up the modpack
-to be honest i have no idea how ur gonna set this up from source good luck to you i guess
+The best way is to run packdev/pack.py --dev
+after that you won't need your original cloned repo, the generated pack will have all of the dev files included.
 
-### How to install the mods
+### How to install/update the modlist
 Make sure python is installed, then run packdev/install.py
 
 ### How to package into a .mrpack
 Make sure python is installed, then run packdev/pack.py
+
+### Adding to the modlist
+The reccomended way (may change) is to add the mod normally through the modrinth app, then export it, rename it to a .zip, and copy the mod in the modrinth.index.json into the modrinth.index.json in the repository.
