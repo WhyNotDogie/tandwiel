@@ -28,7 +28,7 @@ def copyfolderoverwrite(src, dst, rmwriteable=False):
             shutil.rmtree(dst, onerror=rmwriteableretry)
         else:
             shutil.rmtree(dst)
-    shutil.copytree(src, dst, ignore=shutil.ignore_patterns(".packdev"))
+    shutil.copytree(src, dst, ignore=shutil.ignore_patterns(".packdev", "probe.code-snippets", "probe-settings.json", "oculus.properties", "indigo-renderer.properties"))
 
 devdir = "packdev/.packdev/"
 builddir = devdir + "temp/build/"
