@@ -141,4 +141,13 @@ ServerEvents.recipes(event => {
             }
         ]
     })
+    
+    event.recipes.create.mixing(
+        Fluid.of('ad_astra:fuel', 20),
+        [
+            Fluid.of('tfmg:gasoline', 10),
+            Fluid.of('tfmg:diesel', 10),
+            "minecraft:redstone"
+        ]
+    ).heatRequirement("heated").id('kubejs:mixing_fuel')
 })
