@@ -63,6 +63,8 @@ if dev:
     
     copyfolderoverwrite(".vscode", builddir + "overrides/.vscode")
     copyfolderoverwrite("packdev", builddir + "overrides/packdev")
+    
+    copyfolderoverwrite("gallery", builddir + "overrides/gallery")
 
 filename = "builtzip_renameme"
 zippath = devdir + "builds/" + filename
