@@ -17,7 +17,7 @@ Make sure python is installed, then run packdev/install.py:
 ```
 $ python packdev/install.py
 ```
-However this tool is still WIP and may not function correctly. Do not submit issues for this tool.
+Use `--no-clear` to have the program not clear mod and pack lists before redownloading them.
 
 ### How to package into a .mrpack
 Make sure python is installed, then run packdev/pack.py
