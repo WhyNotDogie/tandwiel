@@ -47,6 +47,21 @@ ServerEvents.recipes(event => {
             "millibuckets": 25
         }
     })
+    event.custom({
+        "type": "ad_astra:oxygen_loading",
+        "cookingtime": 1,
+        "energy": 30,
+        "input": {
+            "ingredient": {
+                "fluid": "ad_astra:oxygen"
+            },
+            "millibuckets": 25
+        },
+        "result": {
+            "fluid": "ad_astra:oxygen",
+            "millibuckets": 25
+        }
+    })
     
     event.recipes.create.mechanical_crafting('ad_astra:tier_1_rocket', [
         '   O   ',
@@ -94,4 +109,36 @@ ServerEvents.recipes(event => {
 
     fourcompress(Item.of("ad_astra:iron_plateblock", 8), "create:iron_sheet")
     fourcompress(Item.of("ad_astra:desh_plateblock", 8), "ad_astra:desh_plate")
+
+    event.custom({
+        "type": "tfmg:vat_machine_recipe",
+        "allowedVatTypes": [
+            "tfmg:steel_vat"
+        ],
+        "heatRequirement": "heated",
+        "ingredients": [
+            { "fluid": "minecraft:water", "amount": 100 },
+            { "item": "hexcasting:charged_amethyst" }
+        ],
+        "machines": [
+            // "tfmg:electrode",
+            // "tfmg:electrode"
+        ],
+        "minSize": 1,
+        "processingTime": 100,
+        "results": [
+            {
+                "item": "hexcasting:charged_amethyst",
+                "count": 1
+            },
+            {
+                "fluid": "ad_astra:oxygen",
+                "amount": 75
+            },
+            {
+                "fluid": "tfmg:hydrogen",
+                "amount": 75
+            }
+        ]
+    })
 })

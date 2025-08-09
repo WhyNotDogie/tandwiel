@@ -84,7 +84,7 @@ ServerEvents.recipes(event => {
         B: "minecraft:barrel"
     })
     event.stonecutting("tfmg:exhaust", "tfmg:industrial_pipe")
-    event.recipes.create.emptying([Fluid.of("tfmg:air", 250), 'minecraft:glass_bottle'], 'minecraft:glass_bottle')
+    // event.recipes.create.emptying([Fluid.of("tfmg:air", 250), 'minecraft:glass_bottle'], 'minecraft:glass_bottle')
     event.recipes.create.filling('tfmg:air_bucket', [Fluid.of("tfmg:air", 1000), 'minecraft:bucket'])
     event.recipes.create.mixing(
         [Fluid.of('tfmg:sulfuric_acid', 500)],
