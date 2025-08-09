@@ -7,6 +7,9 @@ import stat
 import json
 import time
 import math
+from datetime import datetime
+
+start = datetime.now().timestamp()
 
 dev = False
 delete = True
@@ -105,3 +108,9 @@ if delete:
         shutil.rmtree("packdev/.packdev/temp/", onerror=rmwriteableretry)
     else:
         print("Unable to delete temporary files: Temporary files do not exist. This is concerning.")
+
+end = datetime.now().timestamp()
+
+ms = int(1000*(end-start))
+
+print("Packaged to " + dest + " in " + str(ms) + " ms")
